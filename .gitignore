@@ -1,0 +1,8 @@
+*.so
+./codec/*.so
+*.pt
+.vscode
+__pycache__
+**/__pycache__
+out/
+logs/

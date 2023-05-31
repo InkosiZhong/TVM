@@ -1,0 +1,17 @@
+{
+    "valid_area": "(0, 540, 1750, 540)",
+    "ban_area": [
+        "(0, 540, 450, 100)",
+        "(0, 1050, 900, 30)"
+    ],
+    "roi_min_size": [5, 5],
+    "blur_kernel": 5,
+    "ctr_dist_k": 2,
+    "inflater_size": 0,
+    "tile_min_size": 130,
+    "gop": 30,
+    "segment": 30,
+    "bitrate": "1000k",
+    "classes": ["car", "truck", "person"],
+    "sim_threshold": 0.85
+}
