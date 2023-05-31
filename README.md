@@ -10,6 +10,7 @@ This is the official project page for paper *"TVM: A Tile-based Video Management
 ```bash
 git clone https://github.com/InkosiZhong/TVM
 ```
+> None: Please use Python>=3.8 for the following steps.
 
 ### 1 NVIDIA GPU Driver & CUDA
 
