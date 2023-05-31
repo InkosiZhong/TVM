@@ -1,8 +1,8 @@
 # TVM: A Tile-based Video Management Framework
 
 This is the official project page for paper *"TVM: A Tile-based Video Management Framework"*.
-
-<details><summary>## Install</summary>
+## Install
+<details><summary>Expand to show installation details.</summary>
 <p>
 
 ### 0 Download TVM
