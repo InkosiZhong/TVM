@@ -2,7 +2,7 @@
 
 This is the official project page for paper *"TVM: A Tile-based Video Management Framework"*.
 
-## Install <details><summary>CLICK ME</summary>
+<details><summary>## Install</summary>
 <p>
 
 ### 0 Download TVM
