@@ -179,7 +179,7 @@ First, we need to initialize TVM:
 ```bash
 mkdir -p cache/codec-test
 mkdir -p logs/codec
-python test/codec_test.py -i ../datasets/archie/2018-04-09 -o cache/codec-test -l logs/codec -c config/archie.json
+python test/codec_test.py -i ../datasets/archie/2018-04-09/1.mp4 -o cache/codec-test -l logs/codec -c config/archie.json
 python scripts/system_init.py -l logs/codec -t codec
 
 mkdir -p logs/dnn
