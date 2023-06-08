@@ -44,6 +44,14 @@ def get_codec_info(logs: str, codec: str, min: int, step: int, sample_min: int, 
             raise RuntimeError('run test/codec_test.py first to generate logs for codec')
         xs, ys = res2area(log, min, step, sample_min, sample_max)
         k, b = np.polyfit(xs, ys, 1)
+        p = np.poly1d((k, b))
+        xs, ys = list(xs), list(ys)
+        for x, y in zip(xs, ys):
+            if abs(y - p(x)) / y > 0.5:
+                xs.remove(x)
+                ys.remove(y)
+        xs, ys = np.array(xs), np.array(ys)
+        k, b = np.polyfit(xs, ys, 1)
         print(f'{key} R^2={R_square(xs, ys, (k, b))}')
         info[f'k_{key}'] = k
         info[f'b_{key}'] = b
