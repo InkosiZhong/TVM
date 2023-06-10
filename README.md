@@ -192,7 +192,7 @@ To create hierarchical tile layouts and tiled video data, run the following comm
 ```bash
 mkdir -p cache/tiling
 python scripts/roi_tiling.py -i ../datasets/archie/2018-04-09 -o ../datasets/archie/2018-04-09-tile -c config/archie.json 
-python scripts/tiling_index.py -i ../datasets/archie/2018-04-09-tile -o query/examples/archie/cache/tiling -c config/archie.json 
+python scripts/tiling_index.py -i ../datasets/archie/2018-04-09-tile -o cache/tiling -c config/archie.json 
 python scripts/roi_tiling.py -i ../datasets/archie/2018-04-10 -o ../datasets/archie/2018-04-10-tile -c config/archie.json -t cache/tiling
 ```
 
