@@ -101,8 +101,8 @@ class TripletDataset(torch.utils.data.Dataset):
             else:
                 anchor_idx, positive_idx, negative_idx = get_triplet_helper()
         
-        anchor, _ = self.dataset[anchor_idx]
-        positive, _ = self.dataset[positive_idx]
-        negative, _ = self.dataset[negative_idx]
+        anchor, _, _ = self.dataset[anchor_idx]
+        positive, _, _ = self.dataset[positive_idx]
+        negative, _, _ = self.dataset[negative_idx]
         
         return anchor, positive, negative # all images
